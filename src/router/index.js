@@ -1,18 +1,27 @@
 import AppLayout from '@/layout/AppLayout.vue';
-import { createRouter, createWebHistory } from 'vue-router';
+import { createRouter, createWebHashHistory } from 'vue-router';
 
 const router = createRouter({
-    history: createWebHistory('/TarjetaQR/'),
+    history: createWebHashHistory(),
     routes: [
-        {
-            path: '/',
-            name: 'dashboard',
-            component: () => import('@/views/Dashboard.vue')
-        },
         {
             path: '/',
             component: AppLayout,
             children: [
+                {
+                    path: 'dashboard',
+                    name: 'dashboard',
+                    component: () => import('@/views/DashboardHome.vue')
+                },
+                {
+                    path: '',
+                    redirect: '/dashboard'
+                },
+                {
+                    path: '/tarjeta',
+                    name: 'tarjeta',
+                    component: () => import('@/views/Dashboard.vue')
+                },
                 {
                     path: '/uikit/formlayout',
                     name: 'formlayout',

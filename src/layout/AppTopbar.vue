@@ -29,7 +29,7 @@ const { toggleMenu, toggleDarkMode, isDarkTheme } = useLayout();
                     </g>
                 </svg>
 
-                <span class="faculty-brand">Facultad de Negocios<br /><small>UNACH</small></span>
+                <span class="faculty-brand">Escuela de Tecnologías<br />Aplicadas<br /><small>UNACH</small></span>
             </router-link>
         </div>
 
