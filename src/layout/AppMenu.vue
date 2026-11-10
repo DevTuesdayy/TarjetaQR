@@ -24,7 +24,7 @@ const model = ref([
             {
                 label: 'Punto de Venta "Práctica 2"',
                 icon: 'pi pi-fw pi-shopping-cart',
-                to: '/pages/crud'
+                to: '/pos'
             },
             {
                 label: 'Graficas',
