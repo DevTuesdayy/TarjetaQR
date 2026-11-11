@@ -17,12 +17,12 @@ const model = ref([
         label: 'MÓDULOS',
         items: [
             {
-                label: 'Credencial "Práctica 1"',
+                label: 'Credencial Institucional',
                 icon: 'pi pi-fw pi-id-card',
                 to: '/tarjeta'
             },
             {
-                label: 'Punto de Venta "Práctica 2"',
+                label: 'Sistema de Ventas',
                 icon: 'pi pi-fw pi-shopping-cart',
                 to: '/pos'
             },

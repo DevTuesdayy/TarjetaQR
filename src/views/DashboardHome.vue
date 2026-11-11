@@ -1,15 +1,15 @@
 <script setup>
 const projects = [
     {
-        title: 'Credencial digital',
-        description: 'Genera una tarjeta personal con RFC, código QR y código de barras.',
+        title: 'Credencial Institucional',
+        description: 'Genera y consulta tu credencial digital con código QR y código de barras.',
         icon: 'pi pi-id-card',
         to: '/tarjeta',
         status: 'Disponible'
     },
     {
-        title: 'Punto de venta',
-        description: 'Registra compras, administra productos y calcula IVA y total.',
+        title: 'Sistema de Ventas',
+        description: 'Administra productos, registra operaciones y consulta tus ventas.',
         icon: 'pi pi-shopping-cart',
         to: '/pos',
         status: 'Disponible'
@@ -193,7 +193,11 @@ h3 {
     font-size: 13px;
 }
 @media (max-width: 640px) {
+    .dashboard-home {
+        width: 100%;
+    }
     .welcome {
+        gap: 14px;
         align-items: flex-start;
         padding: 24px 22px;
     }
@@ -205,6 +209,9 @@ h3 {
     .section-heading {
         align-items: flex-start;
         flex-direction: column;
+    }
+    .project-grid {
+        grid-template-columns: 1fr;
     }
 }
 </style>

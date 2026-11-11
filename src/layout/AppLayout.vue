@@ -32,3 +32,21 @@ const containerClass = computed(() => {
     </div>
     <Toast />
 </template>
+
+<style>
+@media (max-width: 991px) {
+    .layout-wrapper .layout-main-container {
+        padding-right: 2rem;
+    }
+}
+
+@media (max-width: 560px) {
+    .layout-wrapper .layout-main-container {
+        padding: 6.25rem 1rem 0;
+    }
+
+    .layout-wrapper .layout-main {
+        padding-bottom: 1.25rem;
+    }
+}
+</style>
